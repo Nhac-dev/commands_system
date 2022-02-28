@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-#include <string>
-#include <filesystem>
+#include <string.h>
 #include <unistd.h>
 
 using namespace std;
@@ -13,7 +12,7 @@ int main(int argc, char* argv[]){
     
     char cmd_x[100] = "explorer.exe ";
 
-    command_exec = strcat(cmd_x, argv[1]);
+    strcat(cmd_x, argv[1]);
 
     system(cmd_x);
 
