@@ -19,7 +19,7 @@ try {
             let old_data = readFileSync(`${locals.local}/${v}`, "utf8");
 
             if(old_data.includes("{dir}")) writeFileSync(`${locals.local}/${v}`, old_data.replaceAll("{dir}", locals.local).replaceAll("\\", "/"), "utf8");
-            else writeFileSync(`${locals.local}/${v}`, old_data.replaceAll(locals.local.replaceAll("\\", "/"), "{dir}"), "utf8");
+            // else writeFileSync(`${locals.local}/${v}`, old_data.replaceAll(locals.local.replaceAll("\\", "/"), "{dir}"), "utf8");
 
         }
         

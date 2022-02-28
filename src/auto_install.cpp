@@ -8,8 +8,6 @@
 using namespace std;
 
 int main(){
-    // Change {dir} to dir target
-    // Example C:/Users/my-profille/Desktop/commands
     char cmd_x[100] = "node ./src/js/auto-install.js ";
 
     
