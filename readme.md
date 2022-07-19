@@ -12,9 +12,6 @@ Este repositório, serve para guardar arquivos de commandos criado por Jefferson
 ** Ou: > fe 
 * poweroff > Desliga o computador
 * porcent > Criado na diversão, faz cálculos de porcentagens
-* ns > Cria uma base de projetos web (NodeJs, ou somente front-end) e utiliza a lib NhacScript.
-** Exemplo: > ns "Meu Projeto" nodejs %USERPROFILE%/Desktop/ > Projeto com Base NodeJs 
-** Ou: > ns "Meu Projeto" %USERPROFILE%/Desktop/  > Projeto somente Front-End
 
 # Como inciar
 ## Windows
