@@ -1,4 +1,4 @@
-const {readdirSync, readFileSync, writeFileSync, mkdirSync} = require("fs"),
+const {readdirSync, readFileSync, writeFileSync, mkdirSync, readdir} = require("fs"),
     {moveSync} = require("fs-extra"),
     {execSync} = require("child_process");
 
@@ -25,7 +25,7 @@ try {
             let old_data = readFileSync(`${locals.local}/${v}`, "utf8");
 
             if(old_data.includes("{dir}")) writeFileSync(`${locals.local}/${v}`, old_data.replaceAll("{dir}", locals.local).replaceAll("\\", "/"), "utf8");
-            else writeFileSync(`${locals.local}/${v}`, old_data.replaceAll(locals.local.replaceAll("\\", "/"), "{dir}"), "utf8");
+            // else writeFileSync(`${locals.local}/${v}`, old_data.replaceAll(locals.local.replaceAll("\\", "/"), "{dir}"), "utf8");
 
         }
         
